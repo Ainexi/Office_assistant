@@ -16,3 +16,9 @@ pip install jupyterlab==3.6.1 ipython==8.12.0 black==23.3.0
 
 # 生成requirements.txt
 pip freeze > requirements.txt
+
+-- 注意事项
+因为bert模块下载连接不上，所有需要自己下载模型到本地运行 网站https://hf-mirror.com/google-bert/bert-base-chinese/tree/main
+下载bert-base-chinese放入代码model，修改路径可以使用
+
+
