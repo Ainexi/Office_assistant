@@ -13,6 +13,12 @@ pip install transformers==4.28.1 flask==2.2.3 pandas==1.5.3 scikit-learn==1.2.2
 
 # 开发工具
 pip install jupyterlab==3.6.1 ipython==8.12.0 black==23.3.0
+//若安装jupyterlab失败，则分部安装
+pip install tornado ipykernel traitlets
+pip install jupyter-core jupyter-client
+pip install notebook  # 先安装经典notebook
+pip install jupyterlab
+//在conda环境安装jupyterlab模块中的notebook会存在问题，需要用conda install安装 conda install -c conda-forge notebook
 
 # 生成requirements.txt
 pip freeze > requirements.txt
